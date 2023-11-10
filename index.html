@@ -1,28 +1,32 @@
+
 <html>
-<head>
-	<title>Shopping cart</title>
-	<link rel="stylesheet" href="styles.css">
+    <head>
+    <title>Shopping Cart </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="hidden">
-<h1>Login</h1>
-<form id="login-form">
-<label>Username</label>
-<input type="text" id="login-user"><br>
-<label>Password</label>
-<input type="text" id="login-pass"><br>
-<button type="submit">Login</button>
-</form>
-<p id='login-status'></p>
-<h1>Register</h1>
-<form id="reg-form">
-<label>Username</label>
-<input type="text" id="reg-user"><br>
-<label>Password</label>
-<input type="text" id="reg-pass"><br>
-<button type="submit">Register</button>
-</form>
-<p id='reg-status'></p>
+    <div class="hidden" >
+        <h1>Login</h1>
+        <form id="login-form">
+        <label>Username</label>
+        <input type="text" id="login-user"><br>
+        <label>Password</label>
+        <input type="text" id="login-pass"><br>
+        <button type="submit">Login</button>
+        </form>
+        <p id='login-status'></p>
+       </div>
+       <div  class="hidden">
+           <h1>Register</h1>
+           <form id="reg-form">
+           <label>Username</label>
+           <input type="text" id="reg-user"><br>
+           <label>Password</label>
+           <input type="text" id="reg-pass"><br>
+           <button type="submit">Register</button>
+           </form>
+           <p id='reg-status'></p>
+       </div>
 	<div class="hidden">
         <h1><mark>Shopping Cart</mark></h1>
 	<div class="products">
@@ -74,7 +78,7 @@
 
 
 <script>
-const user=[
+ const user=[
 {username:"user1", password:"pass1"},
 {username:"user2", password:"pass2"},
 ];
@@ -101,7 +105,8 @@ else
 user.push({Username: regUsername,Password:regPassword});
 document.getElementById('reg-status').textContent='Registration Successful !'
 }
-});let cartItems = []; 
+});
+let cartItems = []; 
   
  function addToCart(product, price) { 
      cartItems.push({product, price}); 
