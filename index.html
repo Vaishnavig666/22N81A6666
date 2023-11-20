@@ -1,84 +1,99 @@
-
 <html>
-    <head>
-    <title>Shopping Cart </title>
+<head>
+
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <div class="hidden" >
-        <h1>Login</h1>
-        <form id="login-form">
-        <label>Username</label>
-        <input type="text" id="login-user"><br>
-        <label>Password</label>
-        <input type="text" id="login-pass"><br>
-        <button type="submit">Login</button>
-        </form>
-        <p id='login-status'></p>
-       </div>
-       <div  class="hidden">
-           <h1>Register</h1>
-           <form id="reg-form">
-           <label>Username</label>
-           <input type="text" id="reg-user"><br>
-           <label>Password</label>
-           <input type="text" id="reg-pass"><br>
-           <button type="submit">Register</button>
-           </form>
-           <p id='reg-status'></p>
-       </div>
+<h1>Login</h1>
+<form id="login-form">
+<label>Username</label>
+<input type="text" id="login-user"><br>
+<label>Password</label>
+<input type="text" id="login-pass"><br>
+<button type="submit">Login</button>
+</form>
+<p id='login-status'></p>
+<div class="hidden">
+<h1>Register</h1>
+<form id="reg-form">
+<label>Username</label>
+<input type="text" id="reg-user"><br>
+<label>Password</label>
+<input type="text" id="reg-pass"><br>
+<button type="submit">Register</button>
+</form>
+<p id='reg-status'></p>
+</div>
 	<div class="hidden">
-        <h1><mark>Shopping Cart</mark></h1>
+        <h1>Shopping Cart</h1>
+
 	<div class="products">
         <div class="product">
-            <h2>APPLE</h2>
-            <img src="image1.png"  width="200px" height="200px">
-            <p>100% wax free,good source of vitamin c,dietary fiber</p>
-            <p>Price: $10</p>
-            <button class="add-to-cart" onclick="addToCart('APPLE', 10)">Add to Cart</button>
+            <h2>watch</h2>
+            <p>Price:3000rs</p>
+            <img src="watch.jpeg" width="200px" height="200px">
+            <p>Introducing the Titan Raga Delight Metal Strap Watch, a perfect blend of elegance and delightful charm.
+                • The square dial exudes a captivating and charming allure, making a bold statement on your wrist.
+                • Crafted with a metal case material, this watch offers durability and a sleek appearance.
+                • With a case thickness of 7.85 mm, it strikes the perfect balance between slimness and presence on your wrist.</p>
+            <button class="add-to-cart" onclick="addToCart('watch', 1500)">Add to Cart</button>
         </div>
 
         <div class="product">
-            <h2>BANANA</h2>
-            <img src="image2.png"  width="200px" height="200px">
-            <p>naturally flavoured,aromatic and sweeter compared to regular bananas</p>
-            <p>Price: $20</p>
-            <button class="add-to-cart" onclick="addToCart('BANANA', 20)">Add to Cart</button>
+            <h2>bagpack</h2>
+            <p>Price: 500rs</p>
+            <img src="bagpack.jpeg" width="200px" height="200px">
+            <p>Fit Type: regular
+                Innovative Design: AirCase Laptop Backpack is made of Premium Vegan
+                 Leather for your 15.6 Inch Laptop. 
+                This Laptop Backpack has 2 Front Pocket and 2 Main Compartment for Laptop, Tablet and other 
+                Main compartment for wallets dairy, clothes, etc.
+                 There is two way Cortical Tail Zipper with leather pull tail, Fashionable and Novel, keeping up with the current trend.</p>
+            <button class="add-to-cart" onclick="addToCart('bagpack', 500)">Add to Cart</button>
         </div>
         <div class="product">
-            <h2>GAUVA</h2>
-            <img src="image3.png"  width="200px" height="200px">
-            <p>fresh,hygenic and natural . Rich in vitamin A,C,folate and fiber</p>
-            <p>Price: $30</p>
-            <button class="add-to-cart" onclick="addToCart('GAUVA', 30)">Add to Cart</button>
+            <h2>shoes</h2>
+            <p>Price: 1200rs</p>
+            <img src="shoes.jpeg" width="200px" height="200px">
+            Sneakers are a perfect blend of utility and comfort, and they can uplift the wearer’s ensemble instantly.
+             Regardless of the outfit you choose to wear, 
+            the classy pair of cleats are a must-have in any fashion lover’s closet. 
+            <p></p>
+            <button class="add-to-cart" onclick="addToCart('shoes', 900)">Add to Cart</button>
         </div>
         <div class="product">
-            <h2>MANGO</h2>
-            <img src="image4.png" width="200px" height="200px">
-            <p>this provides 50% of your daily vitamin C, 8% of your daily vitamin A and 8% of your daily vitaminB6</p>
-            <p>Price: $40</p>
-            <button class="add-to-cart" onclick="addToCart('MANGO',40)">Add to Cart</button>
+            <h2>iphone</h2>
+            <p>Price:107000rs</p>
+            <img src="iphone.jpeg" width="200px" height="200px">
+            <p>5G Connectivity (SA / NSA): More spectrum bands supported by a handset would provide wider 5G connectivity across markets.
+                Enhanced Coverage: Handset features that can increase the time spent on 5G technology.
+                Superfast 4G: Features that enhance speeds even in 4G coverage.</p>
+            <button class="add-to-cart" onclick="addToCart('phone', 105500)">Add to Cart</button>
         </div>
         <div class="product">
-            <h2>STRAWBERRY</h2>
-            <img src="image5.png"  width="200px" height="200px">
-            <p>strawberries are smart fruit for choice for diabetics and one of the healthiest fruit </p>
-            <p>Price: $50</p>
-            <button class="add-to-cart" onclick="addToCart('STRAWBERRY', 50)">Add to Cart</button>
+            <h2>kurti</h2>
+            <p>Price: 700rs</p>
+            <img src="kurthi.jpeg" width="200px" height="200px" >
+            Style is a way to say who you are without having to speak try trendy naira cut 
+            blue full sleeves kurti in georgette with floral prints on it.
+This featured casual wear kurti avaiable ready-to-wear in M & L size and has extra 2 inches of margin to
+ adjust up to 36"- 40" for your body comfort.
+            <button class="add-to-cart" onclick="addToCart('kurti', 700)">Add to Cart</button>
         </div>
     	</div>
 
         <div class="cart">
-            <h2><mark>Shopping Cart Items</mark></h2>
+            <h2>Shopping Cart</h2>
             <ul id="cart-items"></ul>
             <p>Total: $<span id="total">0</span></p>
             <button onclick="checksout()">Checkout</button>
         </div>
     </div>
 
-
 <script>
- const user=[
+	const user=[
 {username:"user1", password:"pass1"},
 {username:"user2", password:"pass2"},
 ];
@@ -106,37 +121,41 @@ user.push({Username: regUsername,Password:regPassword});
 document.getElementById('reg-status').textContent='Registration Successful !'
 }
 });
-let cartItems = []; 
-  
- function addToCart(product, price) { 
-     cartItems.push({product, price}); 
-     updateCart(); 
- } 
-  
- function updateCart() { 
-     let cartList = document.getElementById("cart-items"); 
-     let totalElement = document.getElementById("total"); 
-     let total = 0; 
-  
-     cartList.innerHTML = ""; 
-     cartItems.forEach(item => { 
-         let listItem = document.createElement("li"); 
-         listItem.innerText = ${item.product} - $${item.price}; 
-         cartList.appendChild(listItem); 
-         total += item.price; 
-     }); 
-  
-     totalElement.innerText = total; 
- } 
-  
-  
-  
-  
- // Add product and cart logic similar to the previous example 
-  
- function checksout() { 
-     alert('Thank you for your purchase!'); 
- }
+    let cartItems = [];
+
+function addToCart(product, price) {
+    cartItems.push({product, price});
+    updateCart();
+}
+
+function updateCart() {
+    let cartList = document.getElementById("cart-items");
+    let totalElement = document.getElementById("total");
+    let total = 0;
+
+    cartList.innerHTML = "";
+    cartItems.forEach(item => {
+        let listItem = document.createElement("li");
+        listItem.innerText = `${item.product} - $${item.price}`;
+        cartList.appendChild(listItem);
+        total += item.price;
+    });
+
+    totalElement.innerText = total;
+}
+
+
+
+
+// Add product and cart logic similar to the previous example
+
+function checksout() {
+    alert('Thank you for your purchase!');
+}
+
 </script>
+
 </body>
 </html>
+
+    
